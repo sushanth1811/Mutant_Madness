@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start IntentLock Backend Server",
+            "type": "shell",
+            "command": "& \"C:\\Program Files\\IDK\\compilers\\Python\\python.exe\" backend/run_server.py",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Security Test Suite",
+            "type": "shell",
+            "command": "& \"C:\\Program Files\\IDK\\compilers\\Python\\python.exe\" backend/run_tests.py",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Reset and Seed Database",
+            "type": "shell",
+            "command": "& \"C:\\Program Files\\IDK\\compilers\\Python\\python.exe\" backend/seed_data.py",
+            "problemMatcher": []
+        }
+    ]
+}

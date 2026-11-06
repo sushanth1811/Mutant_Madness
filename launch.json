@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "IntentLock: Run Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/run_server.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/backend"
+        },
+        {
+            "name": "IntentLock: Run All Security Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/run_tests.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/backend"
+        },
+        {
+            "name": "IntentLock: Seed Test Database",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/backend/seed_data.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/backend"
+        }
+    ]
+}
